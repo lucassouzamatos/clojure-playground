@@ -19,3 +19,11 @@
 (println (sum)) ;; should prints 0
 (println (sum 1)) ;; should prints 1
 (println (sum 1 2)) ;; should prints 3
+
+(defn discounted-value
+  "returns the discounted value"
+  [value]
+  (let [discount 0.10]
+    (* value (- 1 discount))))
+
+(println (discounted-value 100))
