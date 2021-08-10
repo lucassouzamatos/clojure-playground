@@ -19,7 +19,8 @@
   :car
   :size))
 
+; (println (:size (:car new-request)))
 (-> new-request
   :car
   :size
-  println)
+  println) x
